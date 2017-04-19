@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/benbria/aliasify#readme"
-
-    >aliasify (v2.1.0)</a>
+    <a href="https://github.com/benbria/aliasify#readme">aliasify (v2.1.0)</a>
 </h1>
 <h4>Rewrite require calls in browserify modules.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.aliasify">module aliasify</a><ol>
 
@@ -119,17 +112,17 @@
     <li>description and source-code<pre class="apidocCodePre">aliasify = function (file, config) {
   var configData, requireish, wrappedTransform;
   requireish = null;
-  if (config &#x26;&#x26; &#x22;requireish&#x22; in config) {
+  if (config &amp;&amp; "requireish" in config) {
     requireish = config.requireish;
   } else {
     configData = transformTools.loadTransformConfigSync(TRANSFORM_NAME, file, {
       fromSourceFileDir: true
     });
-    if (configData &#x26;&#x26; configData.config &#x26;&#x26; &#x22;requireish&#x22; in configData.config) {
+    if (configData &amp;&amp; configData.config &amp;&amp; "requireish" in configData.config) {
       requireish = configData.config.requireish;
     }
   }
-  wrappedTransform = makeTransform(requireish || [&#x27;require&#x27;]);
+  wrappedTransform = makeTransform(requireish || ['require']);
   return wrappedTransform(file, config);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -169,17 +162,17 @@
     <li>description and source-code<pre class="apidocCodePre">aliasify = function (file, config) {
   var configData, requireish, wrappedTransform;
   requireish = null;
-  if (config &#x26;&#x26; &#x22;requireish&#x22; in config) {
+  if (config &amp;&amp; "requireish" in config) {
     requireish = config.requireish;
   } else {
     configData = transformTools.loadTransformConfigSync(TRANSFORM_NAME, file, {
       fromSourceFileDir: true
     });
-    if (configData &#x26;&#x26; configData.config &#x26;&#x26; &#x22;requireish&#x22; in configData.config) {
+    if (configData &amp;&amp; configData.config &amp;&amp; "requireish" in configData.config) {
       requireish = configData.config.requireish;
     }
   }
-  wrappedTransform = makeTransform(requireish || [&#x27;require&#x27;]);
+  wrappedTransform = makeTransform(requireish || ['require']);
   return wrappedTransform(file, config);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -211,3 +204,4 @@
     ]
 </div>
 </div>
+</body></html>
