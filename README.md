@@ -1,9 +1,14 @@
-# api documentation for  [aliasify (v2.1.0)](https://github.com/benbria/aliasify#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-aliasify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-aliasify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-aliasify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-aliasify)
+# npmdoc-aliasify
+
+#### api documentation for  [aliasify (v2.1.0)](https://github.com/benbria/aliasify#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-aliasify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-aliasify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-aliasify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-aliasify)
+
 #### Rewrite require calls in browserify modules.
 
-[![NPM](https://nodei.co/npm/aliasify.png?downloads=true)](https://www.npmjs.com/package/aliasify)
+[![NPM](https://nodei.co/npm/aliasify.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/aliasify)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-aliasify/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-aliasify_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-aliasify/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-aliasify/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-aliasify/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-aliasify/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-aliasify/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-aliasify/build/screenCapture.npmPackageListing.svg)
 
@@ -26,7 +31,6 @@
     "contributors": [
         {
             "name": "Jason Walton",
-            "email": "dev@lucid.thedreaming.org",
             "url": "https://github.com/jwalton"
         }
     ],
@@ -60,21 +64,17 @@
     "main": "./lib/aliasify.js",
     "maintainers": [
         {
-            "name": "jwalton",
-            "email": "npm@lucid.thedreaming.org"
+            "name": "jwalton"
         },
         {
-            "name": "kreisys",
-            "email": "shaybergmann@gmail.com"
+            "name": "kreisys"
         },
         {
-            "name": "metelyk",
-            "email": "dbronnykova@benbria.ca"
+            "name": "metelyk"
         }
     ],
     "name": "aliasify",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/benbria/aliasify.git"
@@ -86,31 +86,6 @@
     },
     "version": "2.1.0"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module aliasify](#apidoc.module.aliasify)
-1.  [function <span class="apidocSignatureSpan">aliasify.</span>configure (config)](#apidoc.element.aliasify.configure)
-
-
-
-# <a name="apidoc.module.aliasify"></a>[module aliasify](#apidoc.module.aliasify)
-
-#### <a name="apidoc.element.aliasify.configure"></a>[function <span class="apidocSignatureSpan">aliasify.</span>configure (config)](#apidoc.element.aliasify.configure)
-- description and source-code
-```javascript
-configure = function (config) {
-  return function(file) {
-    return module.exports(file, config);
-  };
-}
-```
-- example usage
-```shell
-n/a
 ```
 
 
