@@ -74,28 +74,6 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.aliasify.aliasify">module aliasify.aliasify</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.aliasify.aliasify.aliasify">
-            function <span class="apidocSignatureSpan">aliasify.</span>aliasify
-            <span class="apidocSignatureSpan">(file, config)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.aliasify.aliasify.configure">
-            function <span class="apidocSignatureSpan">aliasify.aliasify.</span>configure
-            <span class="apidocSignatureSpan">(config)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
 </ol></div>
 
 <div class="apidocSectionDiv">
@@ -133,56 +111,6 @@
     <h2>
         <a href="#apidoc.element.aliasify.configure" id="apidoc.element.aliasify.configure">
         function <span class="apidocSignatureSpan">aliasify.</span>configure
-        <span class="apidocSignatureSpan">(config)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">configure = function (config) {
-  return function(file) {
-    return module.exports(file, config);
-  };
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.aliasify.aliasify" id="apidoc.module.aliasify.aliasify">module aliasify.aliasify</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.aliasify.aliasify.aliasify" id="apidoc.element.aliasify.aliasify.aliasify">
-        function <span class="apidocSignatureSpan">aliasify.</span>aliasify
-        <span class="apidocSignatureSpan">(file, config)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">aliasify = function (file, config) {
-  var configData, requireish, wrappedTransform;
-  requireish = null;
-  if (config &amp;&amp; "requireish" in config) {
-    requireish = config.requireish;
-  } else {
-    configData = transformTools.loadTransformConfigSync(TRANSFORM_NAME, file, {
-      fromSourceFileDir: true
-    });
-    if (configData &amp;&amp; configData.config &amp;&amp; "requireish" in configData.config) {
-      requireish = configData.config.requireish;
-    }
-  }
-  wrappedTransform = makeTransform(requireish || ['require']);
-  return wrappedTransform(file, config);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.aliasify.aliasify.configure" id="apidoc.element.aliasify.aliasify.configure">
-        function <span class="apidocSignatureSpan">aliasify.aliasify.</span>configure
         <span class="apidocSignatureSpan">(config)</span>
         </a>
     </h2>
