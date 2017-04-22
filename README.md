@@ -84,7 +84,8 @@
         "prepublish": "coffee -c -o lib src && mocha test",
         "test": "mocha && istanbul report text-summary lcov"
     },
-    "version": "2.1.0"
+    "version": "2.1.0",
+    "bin": {}
 }
 ```
 
